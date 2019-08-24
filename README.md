@@ -18,8 +18,3 @@ The data is available on Kaggle, features of which are briefly summarised here -
     question1, question2 - the full text of each question
     is_duplicate - the target variable, set to 1 if question1 and question2 have essentially the same meaning, and 0 otherwise.
 
-Formulating a ML problem
-
-Since the target column is binary (0 - no similarity, 1 - similar), hence it’s a binary classification problem.
-
-The metric as suggested by Kaggle for this competition is Log Loss which is absolutely necessary to predict the certainity of two question similarity in terms of probability. A perfect value of log-loss is 0 and worst is inf.
