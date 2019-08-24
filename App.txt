@@ -1,0 +1,30 @@
+Preprocessing-
+1. check if the labels are balanced or not.
+2. remove all the punctuations.
+3. Not to stem words
+4. remove id column
+5. word tokenizer
+
+FeatureExtrection-
+1. fuzz_ratio - we use fuzzywuzzy library to find How much percentage these two strings are similar or (Jaccard Similarity)
+2. token_sort_ratio
+3. common words - Number of common unique words in Question 1 and Question 2
+4. ques 1 length
+5. ques 2 length
+6. word_Total =Total num of words in Ques 1 + Ques 2
+7. bow + Tf-Idf features  or  word2vec for distance features : 
+    Cosine distance
+    Cityblock distance (Manhatten distance)
+    Canberra distance
+    Euclidean distance
+    Minkowski distance
+8. diff b/w len 
+9. diff b/w words
+
+Model-
+1. SVM
+2. RF
+
+
+
+1.0*len(q1 and q2)/len(q1+q2)
